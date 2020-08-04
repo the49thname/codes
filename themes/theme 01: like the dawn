@@ -478,9 +478,11 @@ border:1px solid {color:tooltip text};
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
-<!-- tooltip script -->
+<!-- tooltips scripts -->
 
 <script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script src="//drive.google.com/uc?export=view&id=1juO1XYHzJ8Vi_yP5sMyvnD-QGRyCZIef"></script>
 
 <!-- masonry script -->
 
@@ -497,10 +499,6 @@ border:1px solid {color:tooltip text};
 <!-- undophotoset script -->
 
 <script src="//static.tumblr.com/0podkko/qWqq8va08/photosets.js"></script>
-
-<!-- tooltips script -->
-
-<script src="//drive.google.com/uc?export=view&id=1juO1XYHzJ8Vi_yP5sMyvnD-QGRyCZIef"></script>
 
 <!-- THEME JQUERY -->
 

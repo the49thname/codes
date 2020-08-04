@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+<!-- redirect/saved url theme 01
+ 
+     themes by ro (the49thname) / the49ththeme.tumblr.com
+     don't remove the credit, use as a base code, or claim as your own work.
+     edit as much as you want, and feel free to send me any queries/problems.
+ 
+-->
+
+<html xlmns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+<!-- colour options -->
+
+<meta name="color:background" content="#eee"/>
+<meta name="color:text" content="#888"/>
+<meta name="color:link" content="#fe89b3"/>
+<meta name="color:h1 text" content="#fff"/>
+<meta name="color:tooltip text" content="#fff"/>
+<meta name="color:tooltip bg" content="#fe89b3"/>
+<meta name="color:selection text" content="#fff"/>
+<meta name="color:selection bg" content="#fe89b3"/>
+
+<!-- text options -->
+
+<meta name="text:old url or saved url" content="old url"/>
+<meta name="text:new url or your username" content="new url"/>
+
+<!-- image options -->
+
+<meta name="image:bg" content=""/>
+<meta name="image:icon" content="https://68.media.tumblr.com/be522e0a98490759442e1345eb61d315/tumblr_inline_o6tqnozmy71rrt3vb_540.png"/>
+
+<!-- toggle options -->
+
+<meta name="if:round icon" content="1"/>
+<meta name="if:redirect url" content="1"/>
+<meta name="if:saved url" content="0"/>
+
+<!-- fonts -->
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<!-- tooltip scripts -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<style type="text/css">
+
+#tumblr_controls, .tmblr-iframe {display:none!important;}
+
+/* basics */
+
+body {
+color:{color:text};
+background-color:{color:background};
+font-family:'Roboto', sans-serif;
+font-size:10px;
+margin:0;
+line-height:14px;
+letter-spacing:1px;
+text-align:justify;
+word-wrap:break-word;
+background-image:url('{image:bg}');
+background-position:left top;
+background-attachment:fixed;
+background-repeat:repeat;
+}
+
+a {
+color:{color:link};
+text-transform:uppercase;
+text-decoration:none;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+a:hover {
+color:{color:link hover};
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+/* content */
+
+#container {
+position:fixed;
+{block:ifredirecturl}
+width:300px;
+height:260px;
+{/block:ifredirecturl}
+{block:ifsavedurl}
+width:350px;
+height:260px;
+{/block:ifsavedurl}
+top:50%;
+left:50%;
+margin-top:-130px;
+margin-left:-150px;
+text-align:center;
+}
+
+#icon {
+width:100px;
+height:100px;
+margin:0px auto 0px auto;
+}
+
+#icon img {
+width:100px;
+height:100px;
+{block:ifroundicon}
+border-radius:50%;
+{/block:ifroundicon}
+-moz-transition:all 0.5s ease-in-out;
+-webkit-transition:all 0.5s ease-in-out;
+-o-transition:all 0.5s ease-in-out;
+}
+
+#container:hover #icon img {
+border-radius:25%;
+opacity:0.6;
+-moz-transition:all 0.5s ease-in-out;
+-webkit-transition:all 0.5s ease-in-out;
+-o-transition:all 0.5s ease-in-out;
+}
+
+h1 {
+color:{color:h1 text};
+font-size:30px;
+line-height:25px;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+h1 a {
+color:{color:link};
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+h1 a:hover {
+color:{color:h1 text};
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+/* extras */
+
+#s-m-t-tooltip {
+z-index:9999999999;
+color:{color:tooltip text};
+background:{color:tooltip bg};
+font-size:9px;
+line-height:11px;
+font-family: 'Roboto Condensed', sans-serif;
+letter-spacing:1px;
+text-transform:uppercase;
+max-width:150px;
+word-wrap:break-word;
+padding:2px 5px 2px 5px;
+display:block;
+margin:24px 14px 7px 12px;
+}
+
+::selection {color:{color:selection text};background:{color:selection bg};}
+
+/* credit - do not remove, alter, or move to another page */
+
+#credit {
+position:fixed;
+bottom:14px;
+right:10px;
+text-align:center;
+z-index:9999999;
+}
+
+#credit a {
+font-size:10px;
+color:{color:background};
+background-color:{color:link};
+padding:4px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#credit a:hover {
+color:{color:link};
+background-color:{color:background};
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+</style>
+</head>
+<body>
+
+<div id="container">
+<div id="icon"><a href="http://{text:new url or your username}.tumblr.com"><img src="{image:icon}"></a></div>
+<h1>{text:old url or saved url}
+{block:ifredirecturl}<h1>has moved to</h1>{/block:ifredirecturl}
+{block:ifsavedurl}<h1>is being saved by</h1>{/block:ifsavedurl}
+<h1><a href="http://{text:new url or your username}.tumblr.com">{text:new url or your username}</a></h1>
+</div>
+
+<div id="credit"><a href="http://the49thname.tumblr.com/" title="made by the49thname">49</a>
+</div>
+
+</body>
+</html>

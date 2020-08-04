@@ -1,2 +1,4 @@
 # codes
-A collection of themes and pages for Tumblr. Please follow the rules stated <a href="//the49ththeme.tumblr.com/rules">here</a>, and enjoy using my work! For a full list of credits for my work, go <a href="//the49ththeme.tumblr.com/credits">here.</a>
+A collection of themes and pages that I've made for Tumblr.
+
+Please follow the rules stated <a href="//the49ththeme.tumblr.com/rules">here</a>. For a full list of credits for my work, go <a href="//the49ththeme.tumblr.com/credits">here</a>. If you have any questions or problems, you can either send a message to my <a href="//the49thname.tumblr.com/ask">tumblr account</a>, or email me at the49thname@gmail.com.

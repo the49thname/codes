@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+<!-- navigation 03
+
+     themes by ro (the49thname) / the49ththeme.tumblr.com
+     all-in-one base code by neonbikethemes / neonbikethemes.tumblr.com
+     don't remove the credit, use as a base code, or claim as your own work.
+     edit as much as you want, and feel free to send me any queries/problems.
+     
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<meta name="description" content="{MetaDescription}" />
+
+<!-- fonts  -->
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<!-- all-in-one scripts - do not remove -->
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<!-- tooltip script -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+    $(document).ready(function(){
+    $("a[title]").style_my_tooltips({
+    tip_follows_cursor:true,
+    tip_delay_time:90,
+    tip_fade_speed:600,
+    attribute:"title"
+    });
+    });
+    })(jQuery);
+    </script>
+
+<style type="text/css">
+
+::-webkit-scrollbar-thumb {
+z-index:9999999;
+position:relative;
+height:auto;
+background-color:#ff4141; /* change scrollbar thumb colour */
+}
+
+::-webkit-scrollbar {height:5px;width:5px;background-color:transparent;}
+
+/* basics */
+
+body {
+color:#888; /* change text colour */
+background-color:#fff; /* change background colour */
+font-family:'Roboto', sans-serif;
+font-size:10px;
+margin:0;
+line-height:14px;
+letter-spacing:1px;
+text-align:justify;
+word-wrap:break-word;
+}
+
+blockquote {
+margin:0px 0px 0px 20px;
+padding:2px 0px 2px 5px;
+border-left:1px solid #ff4141; /* change blockquote border colour */
+}
+
+b, strong {color:#000;} /* change bold colour */
+
+i, em {color:#ccc;} /* change italic colour */
+
+u {color:#888;text-transform:none;} /* change underline colour */
+
+a {
+color:#ccc; /* change link colour */
+text-transform:uppercase;
+text-decoration:none;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+a:hover {
+color:#888; /* change link hover colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+p {margin:10px;}
+
+h1 {
+font-size:14px;
+font-family: 'Roboto', sans-serif;
+text-align:left;
+text-transform:uppercase;
+letter-spacing:1px;
+color:#fff; /* change heading text colour */
+background-color:#ff6767; /* change heading bg colour */
+padding:10px;
+margin-top:0px;
+}
+
+/* sidebar */
+
+.icon {
+width:80px;
+height:80px;
+position:fixed;
+top:100px;
+left:300px;
+box-sizing:border-box;
+z-index:9;
+}
+
+.icon img {
+width:80px;
+height:80px;
+border-radius:20px;
+opacity:1;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#sidebar {
+position:fixed;
+top:190px;
+left:250px;
+width:150px;
+height:relative;
+background:transparent;
+text-align:center;
+display:block;
+z-index:9999;
+}
+
+#nav {display:block;text-align:center;}
+
+.tabs {
+width:100%;
+margin-left:0px;
+display:inline-block;
+}
+
+.tab-links:after {
+display:block;
+clear:both;
+content:'';
+}
+ 
+.tab-links li {
+list-style:none;
+text-transform:uppercase;
+margin-top:5px;
+margin-bottom:5px;
+}
+ 
+.tab-links a {
+display:block;
+font-family: 'Roboto Condensed', sans-serif;
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:2px;
+color:#888; /* change nav links text colour */
+background-color:#f6f6f6; /* change nav links bg colour */
+padding:8px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+ 
+.tab-links a:hover {
+color:#fff; /* change nav links text hover colour */
+background-color:#ff4141; /* change nav links bg hover colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+ 
+li.active a, li.active a:hover {
+color:#fff; /* change nav links selected text colour */
+background-color:#ff4141; /* change nav links selected bg colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+    
+.tab-content {}
+.tab {display:none;}
+.tab.active {display:block;}
+
+/* posts */
+
+#container {
+position:fixed;
+left:500px;
+top:100px;
+width:600px;
+height:70%;
+border:1px solid #f6f6f6; /* change container border colour */
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.tabcontent {
+position:static;
+margin-left:auto;
+margin-top:auto;
+width:100%;
+}
+
+#posts {
+background-color:#fff; /* change posts bg colour */
+width:500px;
+margin-left:auto;
+margin-right:auto;
+padding:50px;
+line-height:14px;
+letter-spacing:1px;
+}
+
+#posts ul, ol {margin-left:15px;padding:0px!important;}
+
+#posts li {margin:0px 10px;}
+
+#blogrollcont {text-align:center;}
+
+#blogroll {display:inline-block;margin:7px;}
+
+#blogroll img {
+opacity:0.7;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#blogroll:hover img {
+opacity:1;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+h2 {
+color:#fff; /* change tags header colour */
+background-color:#ff6767; /* change tags header bg colour */
+width:480px;
+font-size:12px;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+text-align:left;
+padding:10px;
+margin-top:0px;
+}
+
+.tags {text-align:left;margin-bottom:10px;}
+
+.tags a {
+color:#888; /* change tags colour */
+background-color:#f6f6f6; /* change tags bg colour */
+font-size:10px;
+font-weight:bold;
+text-transform:uppercase;
+width:149px;
+overflow:hidden;
+display:inline-block;
+padding:5px 5px 5px 10px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+.tags a:hover {
+color:#fff; /* change tags hover colour */
+background-color:#ff6767; /* change tags hover bg colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+/* extras */
+
+#s-m-t-tooltip {
+z-index:9999999999;
+color:#fff; /* change tooltips text colour */
+background:#ff4141; /* change tooltips bg colour */
+font-size:9px;
+line-height:11px;
+font-family: 'Roboto Condensed', sans-serif;
+letter-spacing:1px;
+text-transform:uppercase;
+max-width:150px;
+word-wrap:break-word;
+padding:2px 5px 2px 5px;
+display:block;
+margin:24px 14px 7px 12px;
+}
+
+::selection {
+color:#fff; /* change selection text colour */
+background:#ff41414; /* change selection bg colour */
+}
+
+/* credit - do not remove, alter, or move to another page */
+
+#credit {
+position:fixed;
+bottom:14px;
+right:10px;
+width:relative;
+height:relative;
+text-align:center;
+z-index:9999999;
+}
+
+#credit a {
+font-size:10px;
+color:#fff;
+background-color:#ff4141;
+padding:4px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#credit a:hover {
+color:#ff4141;
+background-color:#fff;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+</style>
+</head>
+<body>
+
+<!-- replace the url after "img src=" with your own icon's url -->
+
+<div class="icon"><img src="https://68.media.tumblr.com/3dd89806f838c71259b375ac3974f67d/tumblr_inline_nt8dslXvuk1rrt3vb_540.png"></div>
+
+<div id="sidebar">
+<div id="nav">
+<div class="tabs">
+<ul class="tab-links">
+<li><a href="/">Home</a></li>
+<li class="active"><a href="#tab1">Tags</a></li>
+<li><a href="#tab2">Blogroll</a></li>
+
+<!-- you can change the tab names below to whatever you like, just erase "tab x" to e.g. "about"/"edits"/etc. -->
+
+<li><a href="#tab3">Tab 3</a></li>
+<li><a href="#tab4">Tab 4</a></li>
+<li><a href="#tab5">Tab 5</a></li>
+</ul>
+</div>
+</div>
+</div> <!-- sidebar end -->
+
+<div id="container">
+
+<div class="tabs">
+
+<!-- --------------------------- TAB 1 -------------------------- -->
+
+<div class="tab-content">
+<div id="tab1" class="tab active">
+            
+<div class="tabcontent">
+<div id="posts">
+
+<!-- to add more tags copy and paste:
+
+- FROM HERE -
+<h2>Name</h2>
+<div class="tags">
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+</div>
+- TO HERE -
+
+-->
+
+<h2>Name</h2>
+<div class="tags">
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+</div>
+
+<h2>Name</h2>
+<div class="tags">
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+</div>
+
+<h2>Name</h2>
+<div class="tags">
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+</div>
+
+<h2>Name</h2>
+<div class="tags">
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+<a href="URL goes here" target="_blank">#Tag</a>
+</div>
+
+</div>
+</div>
+</div>
+            
+<!-- -------------------------- TAB 2 -------------------------- -->
+
+<div id="tab2" class="tab">
+<div class="tabcontent">
+<div id="posts">
+
+<div id="blogrollcont">
+{block:Following}{block:Followed}
+<div id="blogroll" class="following"><a target="_blank" href="{FollowedURL}" title="{FollowedName}"><img src="{FollowedPortraitURL-40}"/></a></div>
+{/block:Followed}{/block:Following}
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- -------------------------- TAB 3 -------------------------- -->
+
+<div id="tab3" class="tab">
+<div class="tabcontent">
+<div id="posts">
+
+<h1>Title</h1>
+<p>Content goes here.</p>
+
+</div>
+</div>
+</div>
+
+<!-- -------------------------- TAB 4 -------------------------- -->
+
+<div id="tab4" class="tab">
+<div class="tabcontent">
+<div id="posts">
+
+<h1>Title</h1>
+<p>Content goes here.</p>
+
+</div>
+</div>
+</div>
+
+<!-- -------------------------- TAB 5 -------------------------- -->
+
+<div id="tab5" class="tab">
+<div class="tabcontent">
+<div id="posts">
+
+<h1>Title</h1>
+<p>Content goes here.</p>
+
+</div>
+</div>
+</div>
+
+<!-- END OF TABS -->
+
+</div>
+</div>
+</div>
+</div>
+
+</div> <!-- container end -->
+
+<!-- all-in-one jquery - do not remove -->
+
+<script>
+$(document).ready(function() {
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
+ 
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).fadeIn(600).siblings().hide();
+ 
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#filterOptions li a').click(function() {
+    // fetch the class of the clicked item
+    var ourClass = $(this).attr('class');
+
+    // reset the active class on all the buttons
+    $('#filterOptions li').removeClass('active');
+    // update the active state on our clicked button
+    $(this).parent().addClass('active');
+
+    if(ourClass == 'all') {
+      // show all our items
+      $('#ourHolder').children('div.item').show();
+    }
+    else {
+      // hide all elements that don't share ourClass
+      $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+      // show all elements that do share ourClass
+      $('#ourHolder').children('div.' + ourClass).show();
+    }
+    return false;
+  });
+});
+</script>
+
+<div id="credit"><a href="http://the49thname.tumblr.com/" title="made by the49thname">49</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+<!-- navigation 04
+
+     themes by ro (the49thname) / the49ththeme.tumblr.com
+     masonry script by shythemes / shythemes.tumblr.com
+     don't remove the credit, use as a base code, or claim as your own work.
+     edit as much as you want, and feel free to send me any queries/problems.
+
+-->
+
+<html xlmns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<meta name="description" content="{MetaDescription}" />
+
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+<!-- font awesome script -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- jquery scripts -->
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<!-- tooltip scripts -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<style type="text/css">
+
+#tumblr_controls, .tmblr-iframe {display:none!important;}
+
+::-webkit-scrollbar-thumb {
+z-index:9999;
+position:relative;
+height:auto;
+background-color:#fff; /* change scrollbar thumb colour */
+}
+
+::-webkit-scrollbar {
+height:5px;
+width:5px;
+background-color:#121212; /* change scrollbar background colour */
+}
+
+/* basics */
+
+body {
+color:#fff; /* change text colour */
+background-color:#121212; /* change background colour */
+font-family:'Roboto', sans-serif;
+font-size:10px; /* change text font size */
+margin:0;
+line-height:14px;
+letter-spacing:1px;
+text-align:justify;
+word-wrap:break-word;
+background-image:url('URL GOES HERE'); /* add background image */
+background-position:left top;
+background-attachment:fixed;
+background-repeat:repeat;
+}
+
+a {
+color:#888; /* change link colour */
+text-transform:uppercase;
+text-decoration:none;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+a:hover {
+color:#fff; /* change link hover colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+/* navigation */
+
+#navbar {
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:50px;
+background-color:#000; /* change navbar background colour */
+text-align:center;
+z-index:9999;
+}
+
+#title {
+width:180px;
+margin:8px auto 0px auto;
+padding:10px 15px;
+font-size:20px;
+color:#fff; /* change title colour */
+letter-spacing:5px;
+text-transform:uppercase;
+font-weight:700;
+border-left:1px solid #fff; /* change title left border colour */
+border-right:1px solid #fff; /* change title right border colour */
+}
+
+.nav {position:absolute;top:15px;font-size:20px;}
+
+#navbar ul, #navbar li {margin:0px!important;padding:0px!important;}
+
+#navone {left:50%;margin-left:-260px;}
+
+#navtwo {right:50%;margin-right:-260px;}
+ 
+.nav a {
+padding:0px 10px;
+color:#fff; /* change navigation links colour */
+display:inline-block;
+}
+ 
+.nav a:hover {color:#888;} /* change navigation links hover colour */
+
+/* posts */
+
+#content {width:70%;margin:100px auto 50px auto;}
+
+.tagscont {
+float:left;
+width:270px;
+margin:20px;
+opacity:0;
+z-index:-1;
+transition-duration:1.5s;
+-moz-transition-duration:1.5s;
+-webkit-transition-duration:1.5s;
+-o-transition-duration:1.5s;
+}
+
+h2 {
+color:#000; /* change tags heading colour */
+background-color:#fff; /* change tags heading background colour */
+font-size:12px; /* change tags heading font size */
+letter-spacing:3px;
+text-transform:uppercase;
+text-align:left; /* change tags heading font alignment */
+padding:10px;
+margin-top:0px;
+margin-bottom:0px;
+}
+
+.tags {text-align:left;} /* change tags font alignment */
+
+.tags a {
+color:#fff; /* change tags colour */
+background-color:#000; /* change tags background colour */
+font-size:9px; /* change tags font size */
+text-transform:uppercase;
+overflow:hidden;
+display:block;
+padding:10px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+.tags a:hover {
+color:#fff; /* change tags hover colour */
+background-color:#888; /* change tags background hover colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+/* extras */
+
+#s-m-t-tooltip {
+z-index:9999999999;
+color:#fff; /* change tooltip text colour */
+background:#000; /* change tooltip background colour */
+border:1px solid #fff; /* change tooltip border colour */
+font-size:9px;
+line-height:11px;
+font-family:'Roboto Condensed', sans-serif;
+text-align:left;
+text-transform:uppercase;
+max-width:150px;
+word-wrap:break-word;
+padding:2px 5px 2px 5px;
+display:block;
+margin:24px 14px 7px 12px;
+}
+
+::selection {
+color:#000; /* change selection text colour */
+background:#fff; /* change selection background colour */
+}
+
+/* credit - do not remove, alter, or move to another page */
+
+#credit {
+position:fixed;
+bottom:14px;
+right:10px;
+text-align:center;
+z-index:9999;
+}
+
+#credit a {
+font-size:10px;
+color:#121212;
+background-color:#fff;
+padding:4px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#credit a:hover {
+color:#fff;
+background-color:#121212;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+</style>
+</head>
+<body>
+
+<div id="navbar">
+<div id="title">Navigation</div>
+<div id="navone" class="nav">
+<a href="/" title="home"><c class="fa fa-home"></c></a>
+<a href="/ask" title="ask"><c class="fa fa-envelope"></c></a>
+<a href="/archive" title="past"><c class="fa fa-calendar"></c></a>
+</div>
+<div id="navtwo" class="nav">
+<!-- you can edit your custom links here (the symbols on the right hand side of the title). simply copy and paste the relevant urls where it says "LINK NO. URL" and add in a summary of the link location (e.g. "admin's blog") where it says "LINK NO. HOVER TEXT". -->
+<a href="LINK 1 URL" title="LINK 1 HOVER TEXT"><c class="fa fa-star-o"></c></a>
+<a href="LINK 2 URL" title="LINK 2 HOVER TEXT"><c class="fa fa-star-half-o"></c></a>
+<a href="LINK 3 URL" title="LINK 3 HOVER TEXT"><c class="fa fa-star"></c></a>
+</div>
+</div>
+
+<div id="content">
+
+<!-- here is where you can edit your tags. simply replace TAG NAME with the relevant tag, and replace #TAG NAME with the relevant tag. you can delete a tag by delete everything from <a href... to the closing </a> tag. to add another tag, copy the line of code below:
+
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+
+and make sure to add it before the first closing </div> for the tags container -->
+
+<div class="tagscont">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<!-- to delete a tags section, delete everything from <div class="tagscont"> to the second closing </div>
+
+to add more tags sections, copy the following section of code:
+
+<div class="tagscont">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+and paste it somewhere before the closing #content </div> just below these instructions -->
+
+</div> <!-- #content end -->
+
+<!-- masonry script -->
+
+<script src="http://static.tumblr.com/6hsqxdt/QBym35odk/jquery.masonry.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   var $container = $('#content');
+   $container.masonry({ itemSelector: '.tagscont' });
+   $container.imagesLoaded(function(){
+       $container.masonry();
+       $container.find('.tagscont').animate({ opacity: 1, zIndex: 1 });
+   });
+});
+</script>
+
+<div id="credit"><a href="http://the49thname.tumblr.com/" title="made by the49thname">49</a>
+</div>
+
+</body>
+</html>

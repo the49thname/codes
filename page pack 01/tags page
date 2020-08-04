@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+<!-- tags page 01
+
+     themes by ro (the49thname) / the49ththeme.tumblr.com
+     isotope filtering code by zsu (themesbyzsu) / themesbyzsu.tumblr.com
+     don't remove the credit, use as a base code, or claim as your own work.
+     edit as much as you want, and feel free to send me any queries/problems.
+
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<title>Tags 01</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<meta name="description" content="{MetaDescription}" />
+
+<!-- fonts -->
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<!-- jquery scripts -->
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<!-- font awesome script -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- tooltip scripts -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<style type="text/css">
+
+#tumblr_controls, .tmblr-iframe {display:none;!important;}
+
+::-webkit-scrollbar-thumb {
+z-index:9999999;
+position:relative;
+height:auto;
+background-color:#ccc; /* change scrollbar thumb colour */
+}
+
+::-webkit-scrollbar {
+height:5px;
+width:5px;
+background-color:#f6f6f6; /* change scrollbar background colour */
+}
+
+/* basics */
+
+body {
+color:#888; /* change text colour */
+background-color:#f6f6f6; /* change background colour */
+font-family:'Roboto', sans-serif;
+font-size:10px; /* change text font size */
+margin:0;
+line-height:14px;
+letter-spacing:1px;
+text-align:justify;
+word-wrap:break-word;
+background-image:url('URL goes here'); /* add background image */
+background-position:left top;
+background-attachment:fixed;
+background-repeat:repeat;
+}
+
+b, strong {color:#000;} /* change bold text colour */
+
+i, em {color:#ccc;} /* change italic text colour */
+
+u {color:#888;text-transform:none;} /* change underline text colour */
+
+a {
+color:#ffb3b3; /* change link colour */
+text-transform:uppercase;
+text-decoration:none;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+a:hover {
+color:#888; /* change link hover colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+/* header */
+
+#themecontainer {
+top:0;
+width:900px;
+height:100%;
+margin-left:auto;
+margin-right:auto;
+}
+
+#hdr {
+width:900px;
+height:200px;
+position:absolute;
+top:0;
+background:url('https://68.media.tumblr.com/b0c1aeb55f3bc4ff5c2c2724bfcff9df/tumblr_o6q1oxxgiE1uptww3o2_1280.png') top center; /* add/change header image */
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+}
+
+.nav {
+position:absolute;
+top:200px;
+width:900px;
+height:35px;
+background-color:#ffb3b3; /* change navigation background colour */
+text-align:center;
+z-index:9999;
+}
+ 
+.nav-fixed {position:fixed;top:0;}
+
+.nav ul {margin:0px!important;padding:0px!important;}
+
+.nav li {
+list-style:none;
+display:inline-block;
+padding:12px 8px;
+}
+ 
+.nav a {
+font-family:'Roboto Condensed', sans-serif;
+font-size:14px;
+text-transform:uppercase;
+color:#fff; /* change navigation link colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+ 
+.nav a:hover {
+color:#888; /* change navigation link hover colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+.nav li a.selected {
+color:#888; /* change navigation link selected colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#buttons, #buttons2 {position:fixed;top:35px;z-index:99999;}
+
+#buttons {left:50%;margin-left:-510px;}
+
+#buttons2 {right:50%;margin-right:-510px;}
+
+#buttons c, #buttons2 c {
+display:block;
+background-color:#fff; /* change box link colour */
+margin-bottom:10px;
+padding:10px;
+font-size:20px;
+}
+
+/* posts */
+
+#postcontainer {
+position:relative;
+top:235px;
+width:100%;
+overflow:hidden;
+text-align:justify;
+background-color:#fff; /* change container background colour */
+}
+
+#container {
+width:750px;
+height:100%;
+margin:50px auto;
+}
+
+.tagscont {
+width:200px;
+margin:20px;
+transition-duration:1.5s;
+-moz-transition-duration:1.5s;
+-webkit-transition-duration:1.5s;
+-o-transition-duration:1.5s;
+}
+
+h2 {
+color:#fff; /* change tags header text colour */
+background-color:#bad8eb; /* change tags header background colour */
+font-size:12px;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+text-align:left;
+padding:10px;
+margin-top:0px;
+margin-bottom:0px;
+}
+
+.tags {text-align:left;}
+
+.tags a {
+color:#888; /* change tags text colour */
+background-color:#f6f6f6; /* change tags background colour */
+font-size:9px;
+font-weight:bold;
+text-transform:uppercase;
+overflow:hidden;
+display:block;
+padding:10px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+.tags a:hover {
+color:#fff; /* change tags text hover colour */
+background-color:#ffb3b3; /* change tags background hover colour */
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+/* extras */
+
+#s-m-t-tooltip {
+z-index:9999999999;
+color:#fff; /* change tooltip text colour */
+background:#bad8eb; /* change tooltip background colour */
+font-size:9px;
+line-height:11px;
+font-family:'Roboto Condensed', sans-serif;
+text-align:left;
+text-transform:uppercase;
+max-width:150px;
+word-wrap:break-word;
+padding:2px 5px 2px 5px;
+display:block;
+margin:24px 14px 7px 12px;
+}
+
+::selection {
+color:#fff; /* change selection text colour */
+background:#ffb3b3; /* change selection background colour */
+}
+
+/* credit - do not remove, alter, or move to another page */
+
+#credit {
+position:fixed;
+bottom:14px;
+right:10px;
+text-align:center;
+z-index:9999999;
+}
+
+#credit a {
+font-size:10px;
+color:#f6f6f6;
+background-color:#ccc;
+padding:4px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#credit a:hover {
+color:#ccc;
+background-color:#f6f6f6;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+</style>
+</head>
+<body>
+
+<div id="buttons">
+<a href="/" title="return home"><c class="fa fa-home"></c></a>
+<a href="/ask" title="send a message"><c class="fa fa-envelope"></c></a>
+<a href="/archive" title="view archive"><c class="fa fa-calendar"></c></a>
+</div>
+
+<div id="buttons2">
+<!-- you can edit your custom links here (the boxes on the right hand side of the container). simply copy and paste the relevant urls where it says "LINK NO. URL" and add in a summary of the link location (e.g. "admin's blog") where it says "LINK NO. HOVER TEXT". -->
+<a href="LINK 1 URL" title="LINK 1 HOVER TEXT"><c class="fa fa-star"></c></a>
+<a href="LINK 2 URL" title="LINK 2 HOVER TEXT"><c class="fa fa-heart"></c></a>
+<a href="LINK 3 URL" title="LINK 3 HOVER TEXT"><c class="fa fa-list"></c></a>
+</div>
+
+<div id="themecontainer">
+
+<div id="hdr"></div>
+
+<div class="nav">
+<ul id="filters" class="option-set clearfix" data-option-key="filter">
+<li><a href="#filter" data-option-filter=".tagscont" class="selected">all tags</a></li>
+
+<!-- here is where you can edit your tag filters. all you need to do is change what's between the speech-marks "" after data-option-filter= to whatever div class you use for your tag sections below (e.g. data-option-filter=".general"). MAKE SURE TO PUT A FULL STOP/PERIOD BEFORE YOUR DIV CLASS NAME OTHERWISE IT WON'T WORK!! you also need to have unique div class names for each filter (so you can't have two .general filters otherwise it won't work) and the div class name has to be all one word. you also need to change what's just before </a> to whatever you want your tag filter link up on the navigation bar at the top to be (e.g. general/fandom tags/etc.)
+
+here are examples in case you are stuck:
+
+<li><a href="#filter" data-option-filter=".fandoms">fandoms</a></li>
+<li><a href="#filter" data-option-filter=".mine">my stuff</a></li>
+<li><a href="#filter" data-option-filter=".pairings">pairings</a></li>
+<li><a href="#filter" data-option-filter=".characters">characters</a></li>
+
+-->
+
+<li><a href="#filter" data-option-filter=".div1">link 1</a></li>
+<li><a href="#filter" data-option-filter=".div2">link 2</a></li>
+<li><a href="#filter" data-option-filter=".div3">link 3</a></li>
+<li><a href="#filter" data-option-filter=".div4">link 4</a></li>
+<li><a href="#filter" data-option-filter=".div5">link 5</a></li>
+<li><a href="#filter" data-option-filter=".div6">link 6</a></li>
+
+<!-- to add more links simply copy and paste the following line of code just after this info section (make sure it's pasted after the - - >
+
+<li><a href="#filter" data-option-filter=".div class name">link</a></li>
+
+you'll need to make a new tags section below so the link works -->
+
+</ul>
+</div>
+            
+<div id="postcontainer">
+
+<div id="container" class="clearfix">
+
+<!-- here is where your tag sections are. PLEASE NOTE: YOU /MUST/ MAKE SURE THAT AFTER DIV CLASS= YOU HAVE INCLUDED AT LEAST /ONE/ DIV CLASS NAME THAT YOU GAVE ONE OF THE LINKS ABOVE, OTHERWISE THE FILTERS WON'T WORK!! here is an example so you know what to do:
+
+here is an example link from above:
+
+<li><a href="#filter" data-option-filter=".fandoms">fandoms</a></li>
+
+"fandoms" (from the data-option-filter="" bit) is the important thing to include!! so in one of your tags sections you need it to look like this:
+
+<div class="tagscont fandoms">
+<h2>Title</h2>
+<div class="tags">
+///// TAGS /////
+</div>
+</div>
+
+you /MUST/ have tagscont followed by whatever div class name you gave one of your filter links above, otherwise it won't work. as you can see i put "fandoms" after "tagscont" so that when you click on the link on the navigation bar that says "fandoms", it will sort your tags so that only sections with the word "fandoms" included as one of its div classes will show.
+
+you can include more than one div class name, so if we follow the example above if you had another filter link with a div class of ".characters" you could have a tags section that had the following div classes:
+
+<div class="tagscont fandoms characters">
+.... etc. ......
+
+that way when you click on either the "fandoms" or "characters" link it will show those tags. you can also have more than one tag section using the same div class. -->
+
+<div class="tagscont div1">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div2">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div2">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div3">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div3">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div3">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div4">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div5">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div5">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div6">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div6">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<div class="tagscont div6">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+<!-- to add more tags simply copy and paste the following section of code:
+
+<div class="tagscont divclassname">
+<h2>Title</h2>
+<div class="tags">
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+<a href="/tagged/TAG NAME" target="_blank">#TAG NAME</a>
+</div>
+</div>
+
+and paste it somewhere before the </div></div> just below these instructions and MAKE SURE TO EDIT THE DIV CLASS NAME TO MATCH WHATEVER YOU USE FOR YOUR FILTER LINKS -->
+
+</div>
+</div>
+
+</div>
+
+<div id="credit"><a href="http://the49thname.tumblr.com/" title="made by the49thname">49</a>
+</div>
+
+</body>
+
+<!-- sticky navbar jquery -->
+
+<script>
+$(document).ready(function(){ 
+$(window).bind('scroll', function(){
+ if($(window).scrollTop() > 200){
+ $('.nav').addClass('nav-fixed');
+ }
+
+ else{
+ $('.nav').removeClass('nav-fixed');
+ }
+ });
+});
+</script>
+
+<!------- filter scripts -------->
+
+<script src="http://static.tumblr.com/fuu6t9w/kh8ml0pl9/jquery-1.7.1.min.js"></script>
+ 
+<script src="http://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+ 
+ <script>
+ $(function(){
+ 
+ var $container = $('#container');
+ 
+ $container.isotope({
+ itemSelector : '.tagscont'
+ });
+ 
+ 
+ var $optionSets = $('.nav .option-set'),
+ $optionLinks = $optionSets.find('a');
+ 
+ $optionLinks.click(function(){
+ var $this = $(this);
+ // don't proceed if already selected
+ if ( $this.hasClass('selected') ) {
+ return false;
+ }
+ var $optionSet = $this.parents('.option-set');
+ $optionSet.find('.selected').removeClass('selected');
+ $this.addClass('selected');
+ 
+ // make option object dynamically, i.e. { filter: '.my-filter-class' }
+ var options = {},
+ key = $optionSet.attr('data-option-key'),
+ value = $this.attr('data-option-filter');
+ // parse 'false' as false boolean
+ value = value === 'false' ? false : value;
+ options[ key ] = value;
+ if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+ // changes in layout modes need extra logic
+ changeLayoutMode( $this, options )
+ } else {
+ // otherwise, apply new options
+ $container.isotope( options );
+ }
+ 
+ return false;
+ });
+ 
+ 
+ });
+ </script>
+ 
+ <!-----end filter scripts------>
+
+</html>

@@ -2,7 +2,7 @@
 
 <head>
 
-<!-- theme 01: like the dawn (revamp) / v1.01
+<!-- theme 01: like the dawn (revamp)
 
      themes by ro (the49thname) / the49ththeme.tumblr.com
      tumblr controls fix by cyantists @ tumblr
@@ -96,7 +96,7 @@
 
 <!-- THEME CSS -->
 
-<link href="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm01.css" rel="stylesheet" type="text/css">
+<link href="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm01/thm01.css" rel="stylesheet" type="text/css">
 
 <style type="text/css">
 
@@ -502,7 +502,7 @@ border:1px solid {color:tooltip text};
 
 <!-- THEME JQUERY -->
 
-<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm01.js"></script>
+<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm01/thm01.js"></script>
 
 <!-- masonry jquery -->
 

@@ -96,7 +96,7 @@
 
 <!-- THEME CSS -->
 
-<link href="//drive.google.com/uc?export=view&id=1Wl0PbyKUDeePRmdTBwwzouOOpljPYfyt" rel="stylesheet" type="text/css">
+<link href="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm01.css" rel="stylesheet" type="text/css">
 
 <style type="text/css">
 
@@ -482,7 +482,7 @@ border:1px solid {color:tooltip text};
 
 <script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
 
-<script src="//drive.google.com/uc?export=view&id=1juO1XYHzJ8Vi_yP5sMyvnD-QGRyCZIef"></script>
+<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/tooltips.js"></script>
 
 <!-- masonry script -->
 
@@ -502,7 +502,7 @@ border:1px solid {color:tooltip text};
 
 <!-- THEME JQUERY -->
 
-<script src="//drive.google.com/uc?export=view&id=1dsUgBRgtLs_S1PAwohLv5OxMjkZrklWN"></script>
+<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm01.js"></script>
 
 <!-- masonry jquery -->
 

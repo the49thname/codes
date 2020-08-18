@@ -212,6 +212,7 @@ border:1px solid {color:border};
 #footercont {
 color:{color:header link};
 background-color:{color:header bg};
+border-top:1px solid {color:border};
 }
 
 #fpagination {background-color:{color:header title bg};}

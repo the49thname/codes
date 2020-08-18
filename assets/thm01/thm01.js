@@ -1,4 +1,12 @@
 $(document).ready(function(){
+//adjust height of #postcontainer
+var postPadding = $("#postcontainer").outerHeight() - $("#postcontainer").height();
+var minusHeight = $(window).height() - $('#headercont').outerHeight(true) - $('#footercont').outerHeight(true) - postPadding;
+$(window).on("resize", function () {
+if ($(window).width() < 899) {
+$("#postcontainer").css("min-height", minusHeight);
+}
+}).resize();
 //toggle nav
 $("#headermenu").click(function(){
 $("#headernav2").slideToggle("slow");

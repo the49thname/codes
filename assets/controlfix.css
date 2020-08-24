@@ -1,0 +1,23 @@
+//credit - cyantists @ tumblr
+
+iframe.tmblr-iframe {
+opacity:0.4;
+/* delete from here */
+filter:invert(1);
+-webkit-filter:invert(1);
+-o-filter:invert(1);
+-moz-filter:invert(1);
+-ms-filter:invert(1);
+/*to here if your blog has a dark background */
+transform:scale(0.8);
+transform-origin:100% 0;
+-webkit-transform:scale(0.8);
+-webkit-transform-origin:100% 0;
+-o-transform:scale(0.8);
+-o-transform-origin:100% 0;
+-moz-transform:scale(0.8);
+-moz-transform-origin:100% 0;
+-ms-transform:scale(0.8);
+-ms-transform-origin:100% 0;
+z-index:99999!important;
+}

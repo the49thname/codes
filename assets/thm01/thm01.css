@@ -195,6 +195,7 @@ font-size:calc(1vh + 4px);
 #sidebarcont {position:fixed;top:15vh;left:4%;width:250px;}
 #sidebarinfo, #sidebarnav {width:250px;margin-bottom:5px;}
 #sidebarinfo {padding:5px;}
+#sidebarimg, #sidebarimg img {width:calc(100% - 5px);margin:2px 0 0 2px;}
 
 #sidebarinfo h1 {
 font-family:'Roboto Condensed', sans-serif;

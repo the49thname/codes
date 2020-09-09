@@ -179,7 +179,7 @@ text-align:center;
 .tab {display:none;}
 .tab.active {display:block;}
 
-#askbox {margin-bottom:10px;}
+#askbox {margin-bottom:0;}
 .faq {margin-bottom:5px;}
 .faqq:hover {cursor:help;}
 .arrow {float:right;margin:-33px 15px 0 0;font-size:25px;z-index:9999;}
@@ -236,7 +236,8 @@ text-align:center;
 
 .caption:empty {display:none;}
 .text, .unnestcont, .faq {padding:5px 5px 1px 5px;}
-.posts > .unnestcont {border-top:none;}
+.unnestcont {padding:0 5px 1px 5px;border-top:none;}
+.unnestcont ~ .unnestcont {padding-top:5px;}
 
 .username img {
 width:25px;
@@ -258,8 +259,8 @@ letter-spacing:3px;
 text-transform:uppercase;
 }
 
-.posts h1 {margin:5px;padding:5px;}
-.faqq h1 {margin:0;padding:10px;}
+.posts h1 {margin:5px 0;padding:5px;text-align:center;}
+.faqq h1 {margin:0;padding:10px;border-bottom:none!important;text-align:left;}
 
 .unnest h1, .text h1 {
 margin:0 0 10px 0;
@@ -385,8 +386,7 @@ text-transform:uppercase;
 
 /* perma */
 
-#perma {padding:15px 10px 0 10px;font-size:12px;}
-.buttons {float:left;}
+#perma {padding:10px;font-size:12px;}
 
 #likebutton a, #reblogbutton a {
 -moz-transition-duration:1s;
@@ -414,11 +414,11 @@ overflow:hidden;
 }
 
 c.likeicon {z-index:1;}
-#perma #likebutton .liked + c.likeicon {color:#e11414;}
-a.permalinks, a.tags {margin-top:2px;margin-bottom:2px;}
-a.permalinks {display:inline-block;margin-right:10px;}
+#perma #buttonscont #likebutton .liked + c.likeicon {color:#e11414;}
+#permalinks a {margin-right:10px;}
+#tags {margin-top:5px;}
 
-a.tags {
+#tags a {
 display:inline-block;
 margin-right:10px;
 font-size:11px;
@@ -429,8 +429,8 @@ text-transform:none;
 
 ol.notes {
 list-style-type:none;
-margin:10px 0 0 0;
-padding-top:10px;
+margin:0;
+padding-top:5px;
 font-size:12px;
 text-align:center;
 }

@@ -70,9 +70,11 @@
 <!-- image options -->
 
 <meta name="image:background img" content=""/>
+<meta name="image:sidebar img" content=""/>
 
 <!-- toggle options -->
 
+<meta name="if:show sidebar image" content="0"/>
 <meta name="if:show sidebar navigation" content="1"/>
 <meta name="if:show captions" content="1"/>
 <meta name="if:show tags" content="1"/>
@@ -333,6 +335,7 @@ border:1px solid {color:tooltip text};
 <section id="sidebarcont">
 <div id="sidebarinfo">
 <h1>{text:subtitle text}</h1>
+{block:ifshowsidebarimage}<div id="sidebarimg"><img src="{image:sidebar img}" alt="sidebar img"/></div>{/block:ifshowsidebarimage}
 <div id="sidebardesc">{Description}</div>
 </div>
 <div id="sidebarnav">

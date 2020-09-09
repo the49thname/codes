@@ -387,6 +387,7 @@ text-transform:uppercase;
 /* perma */
 
 #perma {padding:10px;font-size:12px;}
+.buttons {float:left;}
 
 #likebutton a, #reblogbutton a {
 -moz-transition-duration:1s;

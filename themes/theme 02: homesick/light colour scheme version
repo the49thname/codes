@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<head>
+
+<!-- theme 02: homesick (revamp / light ver)
+
+     themes by ro (the49thname) / the49ththeme.tumblr.com
+     tumblr controls fix by cyantists @ tumblr
+     undophotoset script by annasthms @ tumblr
+     npf photoset script by codematurgy @ tumblr
+     pxu photoset script by shythemes @ tumblr / pixelunion @ github
+     don't remove the credit, use as a base code, or claim as your own work.
+     edit as much as you want, and feel free to send me any queries/problems.
+
+-->
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+<!-- colour options -->
+
+<meta name="color:background" content="#eee"/>
+<meta name="color:scrollbar" content="#000"/>
+<meta name="color:sidebar title" content="#000"/>
+<meta name="color:sidebar link" content="#ccc"/>
+<meta name="color:sidebar link hover" content="#000"/>
+<meta name="color:post container bg" content="#fff"/>
+<meta name="color:text" content="#888"/>
+<meta name="color:bold" content="#000"/>
+<meta name="color:italic" content="#ccc"/>
+<meta name="color:underline" content="#888"/>
+<meta name="color:link" content="#ccc"/>
+<meta name="color:link hover" content="#888"/>
+<meta name="color:h1 text" content="#888"/>
+<meta name="color:border" content="#ccc"/>
+<meta name="color:perma links" content="#ccc"/>
+<meta name="color:perma links hover" content="#888"/>
+<meta name="color:tags" content="#ccc"/>
+<meta name="color:tags hover" content="#888"/>
+<meta name="color:tooltip text" content="#fff"/>
+<meta name="color:tooltip bg" content="#888"/>
+<meta name="color:selection text" content="#fff"/>
+<meta name="color:selection bg" content="#888"/>
+
+<!-- text options -->
+
+<meta name="text:Alternate Link 1 URL" content=""/>
+<meta name="text:Alternate Link 1" content="Link 1"/>
+<meta name="text:Alternate Link 2 URL" content=""/>
+<meta name="text:Alternate Link 2" content="Link 2"/>
+
+<meta name="text:tumblr username" content="username"/>
+<meta name="text:FAQ 1 Question" content="Question 1"/>
+<meta name="text:FAQ 1 Answer" content="Here is the answer for Question 1. You can use basic HTML editing i.e. bold text, links, etc."/>
+<meta name="text:FAQ 2 Question" content="Question 2"/>
+<meta name="text:FAQ 2 Answer" content="Here is the answer for Question 2."/>
+<meta name="text:FAQ 3 Question" content="Question 3"/>
+<meta name="text:FAQ 3 Answer" content="Here is the answer for Question 3."/>
+<meta name="text:FAQ 4 Question" content="Question 4"/>
+<meta name="text:FAQ 4 Answer" content="Here is the answer for Question 4."/>
+<meta name="text:FAQ 5 Question" content="Question 5"/>
+<meta name="text:FAQ 5 Answer" content="Here is the answer for Question 5."/>
+
+<meta name="text:Name" content="name"/>
+<meta name="text:Age" content="age"/>
+<meta name="text:Pronouns" content="pronouns"/>
+<meta name="text:Nationality" content="nationality"/>
+<meta name="text:Likes" content="likes"/>
+<meta name="text:Dislikes" content="dislikes"/>
+<meta name="text:About text" content="Here is where your about content goes. You can make it as long as you like. You can also style text using standard HTML editing i.e. bolded text, links, etc."/>
+
+<meta name="text:Link subheading 1" content="Subheading"/>
+<meta name="text:link 1 url" content=""/>
+<meta name="text:link 1" content="link 1"/>
+<meta name="text:link 2 url" content=""/>
+<meta name="text:link 2" content="link 2"/>
+<meta name="text:link 3 url" content=""/>
+<meta name="text:link 3" content="link 3"/>
+<meta name="text:link 4 url" content=""/>
+<meta name="text:link 4" content="link 4"/>
+<meta name="text:link 5 url" content=""/>
+<meta name="text:link 5" content="link 5"/>
+<meta name="text:link 6 url" content=""/>
+<meta name="text:link 6" content="link 6"/>
+<meta name="text:Link subheading 2" content="Subheading"/>
+<meta name="text:link 7 url" content=""/>
+<meta name="text:link 7" content="link 7"/>
+<meta name="text:link 8 url" content=""/>
+<meta name="text:link 8" content="link 8"/>
+<meta name="text:link 9 url" content=""/>
+<meta name="text:link 9" content="link 9"/>
+<meta name="text:link 10 url" content=""/>
+<meta name="text:link 10" content="link 10"/>
+<meta name="text:link 11 url" content=""/>
+<meta name="text:link 11" content="link 11"/>
+<meta name="text:link 12 url" content=""/>
+<meta name="text:link 12" content="link 12"/>
+<meta name="text:Link subheading 3" content="Subheading"/>
+<meta name="text:link 13 url" content=""/>
+<meta name="text:link 13" content="link 13"/>
+<meta name="text:link 14 url" content=""/>
+<meta name="text:link 14" content="link 14"/>
+<meta name="text:link 15 url" content=""/>
+<meta name="text:link 15" content="link 15"/>
+<meta name="text:link 16 url" content=""/>
+<meta name="text:link 16" content="link 16"/>
+<meta name="text:link 17 url" content=""/>
+<meta name="text:link 17" content="link 17"/>
+<meta name="text:link 18 url" content=""/>
+<meta name="text:link 18" content="link 18"/>
+
+<!-- image options -->
+
+<meta name="image:background img" content=""/>
+<meta name="image:profile img" content="//64.media.tumblr.com/529897b177010141156d17c6e2e4cade/076607904a4bd86e-21/s250x400/19356e88066e605a87193a47a8038c6a6efba33c.png"/>
+<meta name="image:side image" content=""/>
+
+<!-- toggle options -->
+
+<meta name="if:show all tabs" content="1"/>
+<meta name="if:show ask tab" content="1"/>
+<meta name="if:show faq" content="1"/>
+<meta name="if:show about tab" content="1"/>
+<meta name="if:show links tab" content="1"/>
+<meta name="if:greyscale filter" content="0"/>
+<meta name="if:show captions" content="1"/>
+<meta name="if:show tags" content="1"/>
+<meta name="if:show like reblog buttons" content="1"/>
+<meta name="if:show side image" content="1"/>
+
+<!-- fonts -->
+
+<link href="//fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- font awesome css -->
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+<!-- pxu photosets css -->
+
+<link href="//static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+
+<!-- npf photosets css -->
+
+<link href="//cdn.jsdelivr.net/gh/boscoxvi/npfphotosets/npfphotosetstyle.css" rel="stylesheet" type="text/css">
+
+<!-- THEME CSS -->
+
+<link href="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02v2.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+::-webkit-scrollbar-thumb {background-color:{color:scrollbar};}
+::-webkit-scrollbar {background-color:{color:post container bg};}
+
+/* basics */
+
+body {
+color:{color:text};
+background-color:{color:background};
+background-image:url('{image:background img}');
+}
+
+pre {border:1px solid {color:border};}
+blockquote {border-left:1px solid {color:border};}
+b, strong {color:{color:bold};}
+i, em {color:{color:italic};}
+u {color:{color:underline};}
+a {color:{color:link};}
+a:hover {color:{color:link hover};}
+hr {border-color:{color:border};}
+
+/* media queries */
+
+@media only screen and (min-width: 1450px) {
+#sidebarcont {
+{block:ifshowsideimage}
+left:calc(50% - 670px);
+{/block:ifshowsideimage}
+{block:ifnotshowsideimage}
+left:calc(50% - 570px);
+{/block:ifnotshowsideimage}
+}    
+
+#postcontainer {
+{block:ifshowsideimage}
+left:calc(50% - 300px);
+{/block:ifshowsideimage}
+{block:ifnotshowsideimage}
+left:calc(50% - 200px);
+{/block:ifnotshowsideimage}
+}
+
+#sideimg {
+{block:ifshowsideimage}
+display:block;
+{/block:ifshowsideimage}
+{block:ifnotshowsideimage}
+display:none;
+{/block:ifnotshowsideimage}
+}
+}
+
+/* sidebar */
+
+#sidebartitle {color:{color:sidebar title};}
+.tab-links a, .pagination a {color:{color:sidebar link};}
+.tab-links a:hover, .pagination a:hover {color:{color:sidebar link hover};}
+.tab-links li.active a, .tab-links li.active a:hover {color:{color:sidebar link hover};}
+.pagination {color:{color:sidebar link};}
+
+/* footer */
+
+a.currentpage {color:{color:text};}
+
+/* tabs */
+
+.faqanswer, .faqtext {background-color:{color:background};}
+.faqtext {border-top:1px solid {color:border};}
+#profile {color:{color:text};background-color:{color:background};}
+#linksnav a {color:{color:text};background-color:{color:background};}
+#linksnav a:hover {color:{color:background};background-color:{color:text};}
+
+/* posts */
+
+#postcontainer {background-color:{color:post container bg};}
+
+/* posts - text */
+
+.caption, .npfset .unnestcont {
+{block:IndexPage}
+{block:ifnotshowcaptions}display:none;{/block:ifnotshowcaptions}
+{/block:IndexPage}
+}
+
+.unnestcont ~ .unnestcont {border-top:1px solid {color:border};}
+.posts h1 {color:{color:h1 text};border-bottom:1px solid {color:border};}
+.faqq h1 {color:{color:text};background-color:{color:background};}
+.unnest h1, .text h1 {color:{color:text};}
+
+/* posts - images */
+
+{block:ifgreyscalefilter}
+{block:IndexPage}
+.posts img, .posts video, .posts iframe {
+-moz-filter:grayscale(100%);
+-webkit-filter:grayscale(100%);
+-o-filter:grayscale(100%);
+filter:grayscale(100%);
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+ 
+.posts:hover img, .posts video, .posts iframe {
+-moz-filter:grayscale(0%);
+-webkit-filter:grayscale(0%);
+-o-filter:grayscale(0%);
+filter:grayscale(0%);
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;
+}
+
+#profileimg img, #sideimg img, iframe.like_toggle, iframe#ask_id {
+-moz-filter:grayscale(0%)!important;
+-webkit-filter:grayscale(0%)!important;
+-o-filter:grayscale(0%)!important;
+filter:grayscale(0%)!important;
+}
+{/block:IndexPage}
+{/block:ifgreyscalefilter}
+
+/* posts - audio */
+
+#audioinfo {color:{color:text};background-color:{color:background};}
+
+/* posts - asks */
+
+#asker a {color:{color:link};}
+#asker a:hover {color:{color:link hover};}
+#ask, #reply {color:{color:text};background-color:{color:background};}
+
+/* perma */
+
+#perma {
+color:{color:perma links};
+border-top:1px solid {color:border};
+border-bottom:1px solid {color:border};
+{block:IndexPage}
+text-align:right;
+{block:ifshowlikereblogbuttons}
+text-align:right;
+{/block:ifshowlikereblogbuttons}
+{block:ifnotshowlikereblogbuttons}
+text-align:center;
+{/block:ifnotshowlikereblogbuttons}
+{/block:IndexPage}
+{block:PermalinkPage}text-align:center;{/block:PermalinkPage}
+}
+
+{block:ifshowlikereblogbuttons}
+#flexcont {
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+{/block:ifshowlikereblogbuttons}
+
+.buttons {
+{block:PermalinkPage}display:none;{/block:PermalinkPage}
+{block:ifnotshowlikereblogbuttons}display:none;{/block:ifnotshowlikereblogbuttons}
+}
+
+#likebutton a, #reblogbutton a {color:{color:perma links hover};}
+.like_button:hover + c.likeicon, #reblogbutton a:hover {color:{color:perma links};}
+#permalinks a {color:{color:perma links};}
+#permalinks a:hover {color:{color:perma links hover};}
+
+#tags a {
+color:{color:tags};
+{block:ifnotshowtags}
+{block:IndexPage}display:none;{/block:IndexPage}
+{/block:ifnotshowtags}
+}
+
+#tags a:hover {color:{color:tags hover};}
+
+/* extras */
+
+#s-m-t-tooltip {
+color:{color:tooltip text};
+background:{color:tooltip bg};
+border:1px solid {color:tooltip text};
+}
+
+::selection {color:{color:selection text};background:{color:selection bg};}
+
+/* credit - do not remove, alter, or move to another page */
+
+#credit a {color:{color:background};background-color:{color:scrollbar};}
+#credit a:hover {color:{color:scrollbar};background-color:{color:background};}
+
+</style>
+</head>
+<body>
+
+<header id="headercont">
+<div id="sidebartitle">{Title}</div>
+<div id="sidebarnav">
+<div class="tabs">
+<ul class="tab-links">
+<li><a href="/">Home</a></li>
+{block:ifshowalltabs}
+<li class="active"><a href="#tab1">Posts</a></li>
+{block:ifshowasktab}<li class="asklink"><a href="#tab2">Ask</a></li>{/block:ifshowasktab}
+{block:ifnotshowasktab}<li><a href="/ask">Ask</a></li>{/block:ifnotshowasktab}
+{block:ifshowabouttab}<li><a href="#tab3">About</a></li>{/block:ifshowabouttab}
+{block:ifnotshowabouttab}<li><a href="/archive">Past</a></li>{/block:ifnotshowabouttab}
+{block:ifshowlinkstab}<li><a href="#tab4">Links</a></li>{/block:ifshowlinkstab}
+{/block:ifshowalltabs}
+{block:ifnotshowalltabs}
+<li><a href="/ask">Ask</a></li>
+<li><a href="/archive">Past</a></li>
+<li><a href="{text:Alternate Link 1 URL}">{text:Alternate Link 1}</a></li>
+<li><a href="{text:Alternate Link 2 URL}">{text:Alternate Link 2}</a></li>
+{/block:ifnotshowalltabs}
+</ul>
+</div>
+</div>
+<div id="sidebardesc">{Description}</div>
+</header>
+
+<section id="sidebarcont">
+<div id="sidebartitle">{Title}</div>
+<div id="sidebarnav">
+<div class="tabs">
+<ul class="tab-links">
+<li><a href="/">Home</a></li>
+{block:ifshowalltabs}
+<li class="active"><a href="#tab1">Posts</a></li>
+{block:ifshowasktab}<li class="asklink"><a href="#tab2">Ask</a></li>{/block:ifshowasktab}
+{block:ifnotshowasktab}<li><a href="/ask">Ask</a></li>{/block:ifnotshowasktab}
+{block:ifshowabouttab}<li><a href="#tab3">About</a></li>{/block:ifshowabouttab}
+{block:ifnotshowabouttab}<li><a href="/archive">Past</a></li>{/block:ifnotshowabouttab}
+{block:ifshowlinkstab}<li><a href="#tab4">Links</a></li>{/block:ifshowlinkstab}
+{/block:ifshowalltabs}
+{block:ifnotshowalltabs}
+<li><a href="/ask">Ask</a></li>
+<li><a href="/archive">Past</a></li>
+<li><a href="{text:Alternate Link 1 URL}">{text:Alternate Link 1}</a></li>
+<li><a href="{text:Alternate Link 2 URL}">{text:Alternate Link 2}</a></li>
+{/block:ifnotshowalltabs}
+</ul>
+</div>
+</div>
+<div id="sidebardesc">{Description}</div>
+{block:Pagination}
+<div class="pagination">{block:PreviousPage}<a href="{PreviousPage}">Back</a> / {/block:PreviousPage}{block:NextPage}<a href="{NextPage}">Forth</a>{/block:NextPage}</div>
+</div>
+{/block:Pagination}
+</section>
+
+<section id="postcontainer">
+<div class="tabs">
+<div class="tab-content">
+
+<!-- TAB 1 -->
+
+<div id="tab1" class="tab active">
+{block:Posts}
+<div class="posts">
+
+{block:Text}
+{block:Title}<h1>{Title}</h1>{/block:Title}
+{block:NotReblog}
+<div class="text">{Body}</div>
+{/block:NotReblog}
+{block:RebloggedFrom}{block:Reblogs}
+<div class="unnestcont">
+<div class="username">
+<img src="{PortraitURL-64}"/>
+<span>{block:IsActive}{block:HasPermalink}<a href="{Permalink}">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}{/block:IsActive}{block:IsDeactivated}{block:HasNoPermalink}<a href="" title="deactivated">{/block:HasNoPermalink}{Username}{block:HasNoPermalink}</a>{/block:HasNoPermalink}{/block:IsDeactivated}</span>
+</div>
+<div class="unnest">{Body}</div>
+</div>
+{/block:Reblogs}{/block:RebloggedFrom}
+{/block:Text}
+
+{block:Quote}
+<div class="text"><h2>{Quote}</h2>
+{block:Source}<div id="source">- {Source}</div>{/block:Source}</div>
+{/block:Quote}
+
+{block:Link}
+<h1><a href="{URL}"><< {Name} >></a></h1>
+{block:Description}
+{block:NotReblog}<div class="text">{Description}</div>{/block:NotReblog}
+{block:RebloggedFrom}{block:Reblogs}
+<div class="unnestcont">
+<div class="username">
+<img src="{PortraitURL-64}"/>
+<span>{block:IsActive}{block:HasPermalink}<a href="{Permalink}">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}{/block:IsActive}{block:IsDeactivated}{block:HasNoPermalink}<a href="" title="deactivated">{/block:HasNoPermalink}{Username}{block:HasNoPermalink}</a>{/block:HasNoPermalink}{/block:IsDeactivated}</span>
+</div>
+<div class="unnest">{Body}</div>
+</div>
+{/block:Reblogs}{/block:RebloggedFrom}
+{/block:Description}
+{/block:Link}
+
+{block:Chat}
+{block:Title}
+<h1>{Title}</h1>
+{/block:Title}
+<div id="chat">
+<ol>{block:Lines}
+<li class="line {Alt}">
+{block:Label}
+<span class="label">
+<b>{Label}</b></span>
+{/block:Label}{Line}</li>
+{/block:Lines}
+</ol></div>
+{/block:Chat}
+
+{block:Photo}
+<div class="mediacont">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}</div>
+{/block:Photo}
+
+{block:Photoset}
+<div class="photo-slideshow mediacont" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"/></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>
+{/block:Photoset}
+
+{block:Video}<div class="mediacont">{Video-500}</div>{/block:Video}
+
+{block:Audio}
+<div id="audio">
+<div id="audioplayerbg"><div id="audioplayer">{AudioPlayerWhite}</div></div>
+<div id="albumart"><span{block:AlbumArt} style="display:none;"{block:AlbumArt}><img src="//78.media.tumblr.com/9b78d1e07567414cae86f9e454b1e9f7/tumblr_inline_o39hgzRFff1rrt3vb_540.png" width="120"/></span>{block:AlbumArt}<img src="{AlbumArtURL}" width="120"/>{/block:AlbumArt}</div>
+<div id="audioinfo">
+<span{block:TrackName} style="display:none;"{block:TrackName}><b>Song:</b> unknown</span>{block:TrackName}<b>Song:</b> {TrackName}{/block:TrackName}
+<br/><span{block:Artist} style="display:none;"{block:Artist}><b>Artist:</b> unknown</span>{block:Artist}<b>Artist:</b> {Artist}{/block:Artist}
+<br/><span{block:Album} style="display:none;"{block:Album}><b>Album:</b> unknown</span>{block:Album}<b>Album:</b> {Album}{/block:Album}
+<br/><span{block:PlayCount} style="display:none;"{block:PlayCount}><b>Play count:</b> unknown</span>{block:PlayCount}<b>Play count:</b> {PlayCount}{/block:PlayCount}
+</div></div>
+{/block:Audio}
+
+{block:Caption}
+<div class="caption">
+{block:NotReblog}<div class="text">{Caption}</div>{/block:NotReblog}
+{block:RebloggedFrom}{block:Reblogs}
+<div class="unnestcont">
+<div class="username">
+<img src="{PortraitURL-64}"/>
+<span>{block:IsActive}{block:HasPermalink}<a href="{Permalink}">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}{/block:IsActive}{block:IsDeactivated}{block:HasNoPermalink}<a href="" title="deactivated">{/block:HasNoPermalink}{Username}{block:HasNoPermalink}</a>{/block:HasNoPermalink}{/block:IsDeactivated}</span>
+</div>
+<div class="unnest">{Body}</div>
+</div>
+{/block:Reblogs}{/block:RebloggedFrom}
+</div>
+{/block:Caption}
+
+{block:Answer}
+<div id="askcont"><div id="asker">{Asker} asked:</div><div id="ask">{Question}</div></div>
+{block:Answerer}<div id="replier">{Answerer} replied:</div>{/block:Answerer}<div id="reply" class="text">{Answer}</div>
+{block:RebloggedFrom}{block:Reblogs}
+<div class="caption">
+<div class="unnestcont">
+<div class="username">
+<img src="{PortraitURL-64}"/>
+<span>{block:IsActive}{block:HasPermalink}<a href="{Permalink}">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}{/block:IsActive}{block:IsDeactivated}{block:HasNoPermalink}<a href="" title="deactivated">{/block:HasNoPermalink}{Username}{block:HasNoPermalink}</a>{/block:HasNoPermalink}{/block:IsDeactivated}</span>
+</div>
+<div class="unnest">{Body}</div>
+</div></div>
+{/block:Reblogs}{/block:RebloggedFrom}
+{/block:Answer}
+
+{block:Date}
+<div id="perma">
+<div id="flexcont">
+<div id="buttonscont">
+<div class="buttons" id="likebutton"><a title="like">{LikeButton}<c class="likeicon fa fa-heart"></c></a></div>
+<div class="buttons" id="reblogbutton"><a href="{ReblogURL}" target="_blank" class="reblog" title="reblog"><c class="fa fa-retweet"></c></a></div>
+</div>
+<div id="permalinks"><a href="{Permalink}" title="{DayOfMonth}{DayOfMonthSuffix} {Month} {Year}">{TimeAgo} @ {NoteCountWithLabel}</a>{block:RebloggedFrom}<br/><a href="{ReblogParentURL}" title="{ReblogParentName}">via</a><a href="{ReblogRootURL}" title="{ReblogRootName}">source</a>{/block:RebloggedFrom}</div>
+</div>
+{block:HasTags}<div id="tags">{block:Tags}<a class="tags" href="{TagURL}">#{Tag}</a>{/block:Tags}</div>{/block:HasTags}
+</div>
+{/block:Date}
+
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+
+</div>
+{/block:Posts}
+</div>
+
+<!-- TAB 2 -->
+
+{block:ifshowasktab}
+<div id="tab2" class="tab">
+<div class="posts">
+<h1>Ask</h1>
+<div id="askbox" class="text">
+<iframe frameborder="0" scrolling="no" width="100%" height="190" src="https://www.tumblr.com/ask_form/{text:tumblr username}.tumblr.com" style="background-color:transparent; overflow:hidden;" id="ask_form"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]-->
+</div>
+
+{block:ifshowfaq}
+<div class="faq">
+<div class="faqq" target="1"><h1>{text:FAQ 1 Question}</h1></div>
+<div class="arrow"><c class="fa fa-caret-down"></c></div>
+<div id="faq1" class="faqanswer"><div class="faqtext">{text:FAQ 1 Answer}</div></div>
+</div>
+
+<div class="faq">
+<div class="faqq" target="2"><h1>{text:FAQ 2 Question}</h1></div>
+<div class="arrow"><c class="fa fa-caret-down"></c></div>
+<div id="faq2" class="faqanswer"><div class="faqtext">{text:FAQ 2 Answer}</div></div>
+</div>
+
+<div class="faq">
+<div class="faqq" target="3"><h1>{text:FAQ 3 Question}</h1></div>
+<div class="arrow"><c class="fa fa-caret-down"></c></div>
+<div id="faq3" class="faqanswer"><div class="faqtext">{text:FAQ 3 Answer}</div></div>
+</div>
+
+<div class="faq">
+<div class="faqq" target="4"><h1>{text:FAQ 4 Question}</h1></div>
+<div class="arrow"><c class="fa fa-caret-down"></c></div>
+<div id="faq4" class="faqanswer"><div class="faqtext">{text:FAQ 4 Answer}</div></div>
+</div>
+
+<div class="faq">
+<div class="faqq" target="5"><h1>{text:FAQ 5 Question}</h1></div>
+<div class="arrow"><c class="fa fa-caret-down"></c></div>
+<div id="faq5" class="faqanswer"><div class="faqtext">{text:FAQ 5 Answer}</div></div>
+</div>
+{/block:ifshowfaq}
+
+</div>
+</div>
+{/block:ifshowasktab}
+
+<!-- TAB 3 -->
+
+{block:ifshowabouttab}
+<div id="tab3" class="tab">
+<div class="posts">
+<h1>About</h1>
+<div class="text">
+<div id="profileimg"><img src="{image:profile img}"/></div>
+<div id="profile">
+<li><b>Name:</b> <span>{text:Name}</span></li>
+<li><b>Age:</b> <span>{text:Age}</span></li>
+<li><b>Pronouns:</b> <span>{text:Pronouns}</span></li>
+<li><b>Nationality:</b> <span>{text:Nationality}</span></li>
+<li><b>Likes:</b> <span>{text:Likes}</span></li>
+<li><b>Dislikes:</b> <span>{text:Dislikes}</span></li>
+</div>
+<div id="profiledesc">{text:About text}</div>
+</div>
+</div>
+</div>
+{/block:ifshowabouttab}
+
+<!-- TAB 4 -->
+
+{block:ifshowlinkstab}
+<div id="tab4" class="tab">
+<div class="posts">
+<h1>Links</h1>
+<div class="text">
+<div id="linksnav">
+<h2>{text:Link subheading 1}</h2>
+<a href="{text:Link 1 URL}">{text:Link 1}</a>
+<a href="{text:Link 2 URL}">{text:Link 2}</a>
+<a href="{text:Link 3 URL}">{text:Link 3}</a>
+<a href="{text:Link 4 URL}">{text:Link 4}</a>
+<a href="{text:Link 5 URL}">{text:Link 5}</a>
+<a href="{text:Link 6 URL}">{text:Link 6}</a>
+<h2>{text:Link subheading 2}</h2>
+<a href="{text:Link 7 URL}">{text:Link 7}</a>
+<a href="{text:Link 8 URL}">{text:Link 8}</a>
+<a href="{text:Link 9 URL}">{text:Link 9}</a>
+<a href="{text:Link 10 URL}">{text:Link 10}</a>
+<a href="{text:Link 11 URL}">{text:Link 11}</a>
+<a href="{text:Link 12 URL}">{text:Link 12}</a>
+<h2>{text:Link subheading 3}</h2>
+<a href="{text:Link 13 URL}">{text:Link 13}</a>
+<a href="{text:Link 14 URL}">{text:Link 14}</a>
+<a href="{text:Link 15 URL}">{text:Link 15}</a>
+<a href="{text:Link 16 URL}">{text:Link 16}</a>
+<a href="{text:Link 17 URL}">{text:Link 17}</a>
+<a href="{text:Link 18 URL}">{text:Link 18}</a>
+</div>
+</div>
+</div>
+</div>
+{/block:ifshowlinkstab}
+
+</div> <!-- .tabs end -->
+</div> <!-- .tab-content end -->
+</section>
+
+<footer id="footercont">
+{block:Pagination}<div class="pagination">{block:PreviousPage}<a href="{PreviousPage}" title="previous page"><c class="fa fa-chevron-left"></c></a>{/block:PreviousPage}{block:JumpPagination length="5"}{block:CurrentPage}<a href="/" class="currentpage">{PageNumber}</a>{/block:CurrentPage}{block:JumpPage}<a href="{URL}">{PageNumber}</a>{/block:JumpPage}{/block:JumpPagination}{block:NextPage}<a href="{NextPage}" title="next page"><c class="fa fa-chevron-right"></c></a>{/block:NextPage}</div>{/block:Pagination}
+</footer>
+
+{block:ifshowsideimage}<div id="sideimg"><img src="{image:side image}"/></div>{/block:ifshowsideimage}
+
+<!-- jquery scripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<!-- tooltips scripts -->
+
+<script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/tooltips.js"></script>
+
+<!-- masonry script -->
+
+<script src="//static.tumblr.com/6hsqxdt/QBym35odk/jquery.masonry.js"></script>
+
+<!-- pxu photosets script -->
+
+<script src="//static.tumblr.com/yxfeliq/hHwojmt8m/bctphotoset.min.js"></script>
+
+<!-- npf photosets script -->
+
+<script src="//cdn.jsdelivr.net/gh/boscoxvi/npfphotosets/npfphotosets.js"></script>
+
+<!-- undophotoset script -->
+
+<script src="//static.tumblr.com/0podkko/qWqq8va08/photosets.js"></script>
+
+<!-- THEME JQUERY -->
+
+<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02.js"></script>
+
+<!-- jquery -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+//tabs
+{block:ifshowalltabs}
+$('.tabs .tab-links a').on('click', function(e) {
+var currentAttrValue = $(this).attr('href');
+$('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
+$(this).parent('li').addClass('active').siblings().removeClass('active');
+e.preventDefault();
+});
+//hide ask tab on /ask page
+{block:ifshowasktab}
+$(function(){
+if (window.location.pathname == "/ask") {
+$('#tab2').remove();
+$('.asklink').replaceWith('<li id="asklink"><a href="/ask">Ask</a></li>');
+}
+});
+{block:ifshowfaq}
+//faq toggles
+$('.faqq').click(function() {
+$('#faq' + $(this).attr('target')).slideToggle(400);
+});
+// remove empty faqs
+$(".faqq h1").each(function() {
+if ($(this).is(":empty")){
+$(this).parents(".faq").remove();
+}});
+{/block:ifshowfaq}
+{/block:ifshowasktab}
+{block:ifshowabouttab}
+$("#profile li span").each(function() {
+if ($(this).is(":empty")){
+$(this).parents("#profile li").remove();
+}});
+{/block:ifshowabouttab}
+{/block:ifshowalltabs}
+});
+</script>
+
+<div id="credit"><a href="//the49thname.tumblr.com/" title="made by the49thname">49</a>
+</div>
+
+</body>
+</html>

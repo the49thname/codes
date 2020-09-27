@@ -201,10 +201,10 @@ text-transform:uppercase;
 
 #profiledesc {margin-top:10px;}
 
-.linksnav {display:flex;flex-flow:row wrap;}
+.linksnav {display:flex;flex-flow:row wrap;justify-content:space-between;}
 
 .linksnav a {
-width:100%;
+width:33%;
 margin:0 0 3px 0;
 padding:5px;
 font-family:'Roboto Condensed', sans-serif;

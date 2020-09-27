@@ -2,7 +2,7 @@
 
 <head>
 
-<!-- theme 02: homesick (revamp / light ver)
+<!-- theme 02: homesick (revamp / light ver) / v2 (edited 27/09/20)
 
      themes by ro (the49thname) / the49ththeme.tumblr.com
      tumblr controls fix by cyantists @ tumblr
@@ -127,6 +127,7 @@
 <meta name="if:show faq" content="1"/>
 <meta name="if:show about tab" content="1"/>
 <meta name="if:show links tab" content="1"/>
+<meta name="if:540px posts" content="0"/>
 <meta name="if:greyscale filter" content="0"/>
 <meta name="if:show captions" content="1"/>
 <meta name="if:show tags" content="1"/>
@@ -151,7 +152,7 @@
 
 <!-- THEME CSS -->
 
-<link href="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02v2.css" rel="stylesheet" type="text/css">
+<link href="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02v3.css" rel="stylesheet" type="text/css">
 
 <style type="text/css">
 
@@ -222,13 +223,22 @@ a.currentpage {color:{color:text};}
 
 .faqanswer, .faqtext {background-color:{color:background};}
 .faqtext {border-top:1px solid {color:border};}
-#profile {color:{color:text};background-color:{color:background};}
-#linksnav a {color:{color:text};background-color:{color:background};}
-#linksnav a:hover {color:{color:background};background-color:{color:text};}
+#profileinfo {color:{color:text};background-color:{color:background};}
+.linksnav a {color:{color:text};background-color:{color:background};}
+.linksnav a:hover {color:{color:background};background-color:{color:text};}
 
 /* posts */
 
 #postcontainer {background-color:{color:post container bg};}
+
+.posts {
+{block:if540pxposts}
+width:540px;
+{/block:if540pxposts}
+{block:ifnot540pxposts}
+width:500px;
+{/block:ifnot540pxposts}
+}
 
 /* posts - text */
 
@@ -242,6 +252,17 @@ a.currentpage {color:{color:text};}
 .posts h1 {color:{color:h1 text};border-bottom:1px solid {color:border};}
 .faqq h1 {color:{color:text};background-color:{color:background};}
 .unnest h1, .text h1 {color:{color:text};}
+
+/* posts - embeds */
+
+.text img, .unnest img, .text video, .unnest video {
+{block:if540pxposts}
+max-width:calc(540px - 20px);
+{/block:if540pxposts}
+{block:ifnot540pxposts}
+max-width:100%;
+{/block:ifnot540pxposts}
+}
 
 /* posts - images */
 
@@ -275,6 +296,15 @@ filter:grayscale(0%)!important;
 }
 {/block:IndexPage}
 {/block:ifgreyscalefilter}
+
+.mediacont img, .mediacont iframe {
+{block:if540pxposts}
+width:540px;
+{/block:if540pxposts}
+{block:ifnot540pxposts}
+width:500px;
+{/block:ifnot540pxposts}
+}
 
 /* posts - audio */
 
@@ -348,7 +378,7 @@ border:1px solid {color:tooltip text};
 
 </style>
 </head>
-<body>
+<body class="page{CurrentPage}">
 
 <header id="headercont">
 <div id="sidebartitle">{Title}</div>
@@ -401,7 +431,7 @@ border:1px solid {color:tooltip text};
 </div>
 <div id="sidebardesc">{Description}</div>
 {block:Pagination}
-<div class="pagination">{block:PreviousPage}<a href="{PreviousPage}">Back</a> / {/block:PreviousPage}{block:NextPage}<a href="{NextPage}">Forth</a>{/block:NextPage}</div>
+<div class="pagination">{block:PreviousPage}<a href="{PreviousPage}">Back</a><span> / </span>{/block:PreviousPage}{block:NextPage}<a href="{NextPage}">Forth</a>{/block:NextPage}</div>
 </div>
 {/block:Pagination}
 </section>
@@ -469,14 +499,14 @@ border:1px solid {color:tooltip text};
 {/block:Chat}
 
 {block:Photo}
-<div class="mediacont">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}</div>
+<div class="mediacont">{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}</div>
 {/block:Photo}
 
 {block:Photoset}
-<div class="photo-slideshow mediacont" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"/></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>
+<div class="photo-slideshow mediacont" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-700}" width="{PhotoWidth-700}" height="{PhotoHeight-700}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"/></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>
 {/block:Photoset}
 
-{block:Video}<div class="mediacont">{Video-500}</div>{/block:Video}
+{block:Video}<div class="mediacont">{Video-700}</div>{/block:Video}
 
 {block:Audio}
 <div id="audio">
@@ -592,14 +622,16 @@ border:1px solid {color:tooltip text};
 <div class="posts">
 <h1>About</h1>
 <div class="text">
-<div id="profileimg"><img src="{image:profile img}"/></div>
 <div id="profile">
+<div id="profileimg"><img src="{image:profile img}"/></div>
+<div id="profileinfo">
 <li><b>Name:</b> <span>{text:Name}</span></li>
 <li><b>Age:</b> <span>{text:Age}</span></li>
 <li><b>Pronouns:</b> <span>{text:Pronouns}</span></li>
 <li><b>Nationality:</b> <span>{text:Nationality}</span></li>
 <li><b>Likes:</b> <span>{text:Likes}</span></li>
 <li><b>Dislikes:</b> <span>{text:Dislikes}</span></li>
+</div>
 </div>
 <div id="profiledesc">{text:About text}</div>
 </div>
@@ -614,28 +646,34 @@ border:1px solid {color:tooltip text};
 <div class="posts">
 <h1>Links</h1>
 <div class="text">
-<div id="linksnav">
+<div id="linkscont">
 <h2>{text:Link subheading 1}</h2>
+<div class="linksnav">
 <a href="{text:Link 1 URL}">{text:Link 1}</a>
 <a href="{text:Link 2 URL}">{text:Link 2}</a>
 <a href="{text:Link 3 URL}">{text:Link 3}</a>
 <a href="{text:Link 4 URL}">{text:Link 4}</a>
 <a href="{text:Link 5 URL}">{text:Link 5}</a>
 <a href="{text:Link 6 URL}">{text:Link 6}</a>
+</div>
 <h2>{text:Link subheading 2}</h2>
+<div class="linksnav">
 <a href="{text:Link 7 URL}">{text:Link 7}</a>
 <a href="{text:Link 8 URL}">{text:Link 8}</a>
 <a href="{text:Link 9 URL}">{text:Link 9}</a>
 <a href="{text:Link 10 URL}">{text:Link 10}</a>
 <a href="{text:Link 11 URL}">{text:Link 11}</a>
 <a href="{text:Link 12 URL}">{text:Link 12}</a>
+</div>
 <h2>{text:Link subheading 3}</h2>
+<div class="linksnav">
 <a href="{text:Link 13 URL}">{text:Link 13}</a>
 <a href="{text:Link 14 URL}">{text:Link 14}</a>
 <a href="{text:Link 15 URL}">{text:Link 15}</a>
 <a href="{text:Link 16 URL}">{text:Link 16}</a>
 <a href="{text:Link 17 URL}">{text:Link 17}</a>
 <a href="{text:Link 18 URL}">{text:Link 18}</a>
+</div>
 </div>
 </div>
 </div>
@@ -680,7 +718,7 @@ border:1px solid {color:tooltip text};
 
 <!-- THEME JQUERY -->
 
-<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02.js"></script>
+<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02v2.js"></script>
 
 <!-- jquery -->
 

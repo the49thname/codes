@@ -718,12 +718,16 @@ border:1px solid {color:tooltip text};
 
 <!-- THEME JQUERY -->
 
-<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02v2.js"></script>
+<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02.js"></script>
 
 <!-- jquery -->
 
 <script type="text/javascript">
 $(document).ready(function(){
+//pagination
+if ($('body').is(".page{TotalPages}")) {
+$('.pagination span').remove();
+}
 //tabs
 {block:ifshowalltabs}
 $('.tabs .tab-links a').on('click', function(e) {

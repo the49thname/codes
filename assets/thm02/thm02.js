@@ -1,8 +1,4 @@
 $(document).ready(function() {
-//pagination
-if ($('body').is(".page{TotalPages}")) {
-$('.pagination span').remove();
-}
 //adjust height of #postcontainer
 var minusHeight = $(window).height() - $('#headercont').outerHeight(true) - $('#footercont').outerHeight(true);
 $(window).on("resize", function () {

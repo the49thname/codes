@@ -264,6 +264,8 @@ max-width:100%;
 {/block:ifnot540pxposts}
 }
 
+#profileimg img {max-width:150px!important;max-height:150px!important;}
+
 /* posts - images */
 
 {block:ifgreyscalefilter}

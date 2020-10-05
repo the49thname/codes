@@ -2,7 +2,7 @@
 
 <head>
 
-<!-- theme 02: homesick (revamp / dark ver) / v2 (edited 27/09/20)
+<!-- theme 02: homesick (revamp / dark ver) / v3 (edited 05/10/20)
 
      themes by ro (the49thname) / the49ththeme.tumblr.com
      tumblr controls fix by cyantists @ tumblr
@@ -152,7 +152,7 @@
 
 <!-- THEME CSS -->
 
-<link href="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02v3.css" rel="stylesheet" type="text/css">
+<link href="//dl.dropbox.com/s/0cr5a8bqjuxyfdz/thm02css.css" rel="stylesheet" type="text/css">
 
 <style type="text/css">
 
@@ -720,7 +720,7 @@ border:1px solid {color:tooltip text};
 
 <!-- THEME JQUERY -->
 
-<script src="//cdn.jsdelivr.net/gh/the49thname/codes/assets/thm02/thm02.js"></script>
+<script src="//dl.dropbox.com/s/vvfltx0om8cwdkw/thm02js.js"></script>
 
 <!-- jquery -->
 

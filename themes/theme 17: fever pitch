@@ -8,7 +8,7 @@
      tumblr controls fix by cyantists @ tumblr
      npf photoset script by codematurgy @ tumblr
      pxu photoset script by shythemes @ tumblr / pixelunion @ github
-     honeybee icons by suiomi @ tumblr
+     cappuccicons icons by suiomi @ tumblr
      don't remove the credit, use as a base code, or claim as your own work.
      edit as much as you want, and feel free to send me any queries/problems.
 
@@ -79,9 +79,9 @@
 
 <script src="//use.edgefonts.net/double-pica.js"></script>
 
-<!-- honeybee script -->
+<!-- cappuccicons script -->
 
-<link href="//dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" rel="stylesheet">
+<script src="//pull.cappuccicons.com/cpf.js"></script>
 
 <!-- pxu photosets css -->
 
@@ -784,7 +784,10 @@ text-align:center;
 }
 
 .buttonscont {
-display:inline-block;
+display:flex;
+flex-flow:row nowrap;
+justify-content:center;
+align-items:center;
 {block:ifshowiconpermalinks}width:100%;{/block:ifshowiconpermalinks}
 color:{color:button icon};
 text-align:center;
@@ -801,13 +804,14 @@ margin-bottom:2%;
 .buttonscont a {color:{color:button icon};}
 .buttonscont a:hover {color:{color:button icon hover};}
 
-.buttonscont .th-tooth-o,
-.buttonscont .th-heart-1,
-.buttonscont .th-reblog {
+.buttonscont .cp-tooth,
+.buttonscont .cp-heart,
+.buttonscont .cp-reblog {
 font-size:1rem;
 }
 
-.buttonscont .th-key-o {
+.buttonscont .cp-key {
+display:block;
 transform:rotate(-45deg) scaleX(-1);
 -webkit-transform:rotate(-45deg) scaleX(-1);
 }
@@ -889,6 +893,10 @@ text-align:center;
 #tags a:hover {color:{color:tags hover};}
 
 #pagination {
+display:flex;
+flex-flow:row nowrap;
+justify-content:center;
+align-items:center;
 width:94%;
 margin:0 0 10% 5%;
 color:{color:scrollbar};
@@ -903,18 +911,23 @@ margin-left:calc(1rem - 6px);
 margin-right:calc(1rem - 6px);
 }
 
-#pagination .th:first-of-type, #pagination .th:nth-of-type(3) {
+#pagination .cp:first-of-type, #pagination .cp:nth-of-type(3) {
+display:block;
 transform:rotate(45deg);
 -webkit-transform:rotate(45deg);
 }
 
-#pagination .th:nth-of-type(2), #pagination .th:last-of-type {
+#pagination .cp:nth-of-type(2), #pagination .cp:last-of-type {
+display:block;
 transform:rotate(-45deg) scaleX(-1);
 -webkit-transform:rotate(-45deg) scaleX(-1);
 }
 
 #pagination a {
-display:inline-block;
+display:flex;
+flex-flow:row nowrap;
+justify-content:center;
+align-items:center;
 margin-right:calc(1rem - 6px);
 color:{color:scrollbar};
 }
@@ -1120,7 +1133,7 @@ font-size:12px;
 {block:ifshowiconpermalinks}
 {block:IndexPage}<div id="perma">
 <div class="buttonscont">
-<div class="buttons likebutton">{LikeButton}<span class="likeicon th th-heart-1"></span></div><div class="buttons"><a href="{Permalink}" title="{NoteCount} teeth collected"><span class="th th-tooth-o"></span></a></div><div class="buttons"><a href="{Permalink}" title="Memory unlocked {block:Date}{TimeAgo}{/block:Date}"><span class="th th-key-o"></span></a></div><div class="buttons reblogbutton"><a href="{ReblogURL}" target="_blank" class="reblog" title="reblog"><span class="th th-reblog"></span></a></div>
+<div class="buttons likebutton">{LikeButton}<span class="likeicon cp cp-heart"></span></div><div class="buttons"><a href="{Permalink}" title="{NoteCount} teeth collected"><span class="cp cp-tooth"></span></a></div><div class="buttons"><a href="{Permalink}" title="Memory unlocked {block:Date}{TimeAgo}{/block:Date}"><span class="cp cp-key"></span></a></div><div class="buttons reblogbutton"><a href="{ReblogURL}" target="_blank" class="reblog" title="reblog"><span class="cp cp-reblog"></span></a></div>
 </div>
 {block:HasTags}<div id="tags">{block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}</div>{/block:HasTags}
 </div>{/block:IndexPage}
@@ -1135,8 +1148,8 @@ font-size:12px;
 {/block:ifshowiconpermalinks}
 
 {block:ifnotshowiconpermalinks}<div id="perma">
-{block:IndexPage}<div class="buttonscont"><div class="buttons likebutton">{LikeButton}<span class="likeicon th th-heart-1"></span></div></div>{/block:IndexPage}<div id="permalinks"><a href="{Permalink}">{block:Date}{TimeAgo}{/block:Date}</a> <a href="{Permalink}">{NoteCountwithLabel}</a> {block:RebloggedFrom}<a href="{ReblogParentURL}" title="{ReblogParentName}">via</a>{/block:RebloggedFrom} {block:ContentSource}<a href="{SourceURL}" title="{SourceTitle}">©</a>{/block:ContentSource}</div>
-{block:IndexPage}<div class="buttonscont"><div class="buttons reblogbutton"><a href="{ReblogURL}" target="_blank" class="reblog" title="reblog"><span class="th th-reblog"></span></a></div></div>{/block:IndexPage}
+{block:IndexPage}<div class="buttonscont"><div class="buttons likebutton">{LikeButton}<span class="likeicon cp cp-heart"></span></div></div>{/block:IndexPage}<div id="permalinks"><a href="{Permalink}">{block:Date}{TimeAgo}{/block:Date}</a> <a href="{Permalink}">{NoteCountwithLabel}</a> {block:RebloggedFrom}<a href="{ReblogParentURL}" title="{ReblogParentName}">via</a>{/block:RebloggedFrom} {block:ContentSource}<a href="{SourceURL}" title="{SourceTitle}">©</a>{/block:ContentSource}</div>
+{block:IndexPage}<div class="buttonscont"><div class="buttons reblogbutton"><a href="{ReblogURL}" target="_blank" class="reblog" title="reblog"><span class="cp cp-reblog"></span></a></div></div>{/block:IndexPage}
 {block:HasTags}<div id="tags">{block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}</div>{/block:HasTags}
 </div>{/block:ifnotshowiconpermalinks}
 
@@ -1147,7 +1160,7 @@ font-size:12px;
 </div>
 {/block:Posts}
 
-{block:Pagination}<div id="pagination">{block:PreviousPage}<a href="{PreviousPage}"><span class="th th-knife-o"></span> Back <span class="th th-knife-o"></span></a>{/block:PreviousPage}{block:NextPage}<a href="{NextPage}"><span class="th th-knife-o"></span> Forth <span class="th th-knife-o"></span></a>{/block:NextPage}</div>{/block:Pagination}
+{block:Pagination}<div id="pagination">{block:PreviousPage}<a href="{PreviousPage}"><span class="cp cp-knife"></span> Back <span class="cp cp-knife"></span></a>{/block:PreviousPage}{block:NextPage}<a href="{NextPage}"><span class="cp cp-knife"></span> Forth <span class="cp cp-knife"></span></a>{/block:NextPage}</div>{/block:Pagination}
 
 </div>
 </div>

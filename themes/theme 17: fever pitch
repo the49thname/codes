@@ -765,9 +765,6 @@ opacity:0.5;
 /* perma */
 
 #perma {
-display:flex;
-flex-flow:row nowrap;
-justify-content:center;
 {block:IndexPage}
 {block:ifshowiconpermalinks}padding:2% 2% 0 2%;{/block:ifshowiconpermalinks}
 {block:ifnotshowiconpermalinks}
@@ -784,6 +781,12 @@ border-bottom:1px solid {color:border};
 {/block:PermalinkPage}
 letter-spacing:2px;
 text-align:center;
+}
+
+.textperma {
+display:flex;
+flex-flow:row nowrap;
+justify-content:center;
 }
 
 .buttonscont {
@@ -1150,8 +1153,8 @@ font-size:12px;
 {/block:ifshowiconpermalinks}
 
 {block:ifnotshowiconpermalinks}<div id="perma">
-{block:IndexPage}<div class="buttonscont"><div class="buttons likebutton">{LikeButton}<span class="likeicon cp cp-heart"></span></div></div>{/block:IndexPage}<div id="permalinks"><a href="{Permalink}">{block:Date}{TimeAgo}{/block:Date}</a> <a href="{Permalink}">{NoteCountwithLabel}</a> {block:RebloggedFrom}<a href="{ReblogParentURL}" title="{ReblogParentName}">via</a>{/block:RebloggedFrom} {block:ContentSource}<a href="{SourceURL}" title="{SourceTitle}">©</a>{/block:ContentSource}</div>
-{block:IndexPage}<div class="buttonscont"><div class="buttons reblogbutton"><a href="{ReblogURL}" target="_blank" class="reblog" title="reblog"><span class="cp cp-reblog"></span></a></div></div>{/block:IndexPage}
+<div class="textperma">{block:IndexPage}<div class="buttonscont"><div class="buttons likebutton">{LikeButton}<span class="likeicon cp cp-heart"></span></div></div>{/block:IndexPage}<div id="permalinks"><a href="{Permalink}">{block:Date}{TimeAgo}{/block:Date}</a> <a href="{Permalink}">{NoteCountwithLabel}</a> {block:RebloggedFrom}<a href="{ReblogParentURL}" title="{ReblogParentName}">via</a>{/block:RebloggedFrom} {block:ContentSource}<a href="{SourceURL}" title="{SourceTitle}">©</a>{/block:ContentSource}</div>
+{block:IndexPage}<div class="buttonscont"><div class="buttons reblogbutton"><a href="{ReblogURL}" target="_blank" class="reblog" title="reblog"><span class="cp cp-reblog"></span></a></div></div>{/block:IndexPage}</div>
 {block:HasTags}<div id="tags">{block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}</div>{/block:HasTags}
 </div>{/block:ifnotshowiconpermalinks}
 

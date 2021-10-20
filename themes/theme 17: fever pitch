@@ -765,6 +765,9 @@ opacity:0.5;
 /* perma */
 
 #perma {
+display:flex;
+flex-flow:row nowrap;
+justify-content:center;
 {block:IndexPage}
 {block:ifshowiconpermalinks}padding:2% 2% 0 2%;{/block:ifshowiconpermalinks}
 {block:ifnotshowiconpermalinks}
@@ -873,7 +876,6 @@ margin-left:calc(1rem - 6px)!important;
 {/block:PermalinkPage}
 
 {block:ifnotshowiconpermalinks}
-#permalinks {display:inline-block;}
 #permalinks a {color:{color:perma link};padding-right:calc(1rem - 6px);}
 #permalinks a:last-child {padding-right:0;}
 #permalinks a:hover {color:{color:perma link hover};}

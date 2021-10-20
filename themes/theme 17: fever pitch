@@ -816,7 +816,7 @@ transform:rotate(-45deg) scaleX(-1);
 -webkit-transform:rotate(-45deg) scaleX(-1);
 }
 
-.buttons {display:inline-block;margin:0 3%;}
+.buttons {margin:0 3%;}
 .buttons:first-of-type {margin-left:0;}
 .buttons:last-of-type {margin-right:0;}
 

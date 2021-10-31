@@ -429,7 +429,7 @@ background-color:{color:pagination link}!important;
 
 /* posts - text */
 
-.caption, .unnestcont {
+.caption {
 {block:IndexPage}
 {block:ifnotshowcaptions}display:none;{/block:ifnotshowcaptions}
 {/block:IndexPage}

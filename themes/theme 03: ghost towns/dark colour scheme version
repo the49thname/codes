@@ -56,8 +56,10 @@
 
 <meta name="if:header layout" content="0"/>
 <meta name="if:rhs sidebar" content="0"/>
+<meta name="if:show icon" content="1"/>
 <meta name="if:show search bar" content="1"/>
 <meta name="if:show updates" content="1"/>
+<meta name="if:footer pagination" content="0"/>
 <meta name="if:show captions" content="1"/>
 <meta name="if:show tags" content="1"/>
 <meta name="if:show like reblog buttons" content="1"/>
@@ -213,7 +215,12 @@ hr {width:200px;margin:0 auto 10px auto;border-color:{color:border};}
 }
 
 @media only screen and (min-width: 880px) {
-#headercont, #footerpag {display:none;}
+#headercont {display:none;}
+
+{block:ifnotfooterpagination}
+#footerpag {display:none;}
+{/block:ifnotfooterpagination}
+
 #sidebarcont {display:flex;}
 
 #postcontainer {
@@ -245,11 +252,16 @@ justify-content:center;
 align-items:center;
 width:30px;
 height:30px;
-margin-top:65px;
-margin-left:65px;
 border-radius:50%;
 font-size:15px;
 z-index:99;
+{block:ifshowicon}
+margin-top:65px;
+margin-left:65px;
+{/block:ifshowicon}
+{block:ifnotshowupdates}
+display:none;
+{/block:ifnotshowupdates}
 }
 
 .updatestoggle:hover {cursor:help;}
@@ -296,8 +308,32 @@ width:500px;
 margin:80px auto;
 }
 
-#headericon {width:80px;height:80px;margin-bottom:20px;}
-#headericon img {width:80px;height:80px;border-radius:25%;}
+#headericon {
+{block:ifshowicon}
+width:80px;
+height:80px;
+{/block:ifshowicon}
+{block:ifnotshowicon}
+{block:ifshowupdates}
+width:30px;
+height:30px;
+{/block:ifshowupdates}
+{block:ifnotshowupdates}
+display:none;
+{/block:ifnotshowupdates}
+{/block:ifnotshowicon}
+margin-bottom:20px;
+}
+
+#headericon img {
+width:80px;
+height:80px;
+border-radius:25%;
+{block:ifnotshowicon}
+display:none;
+{/block:ifnotshowicon}
+}
+
 #headerdesc {margin-bottom:10px;text-align:center;}
 #headersearch {margin-bottom:10px;}
 #headersearch .sfm input {color:{color:text};background-color:transparent;}
@@ -340,6 +376,18 @@ align-items:center;
 width:170px;
 height:80px;
 margin-bottom:10px;
+}
+
+#sidebarflex, #sidebaricon {
+{block:ifnotshowicon}
+display:none;
+{/block:ifnotshowicon}
+}
+
+#sidebarflex .pagination {
+{block:iffooterpagination}
+display:none;
+{/block:iffooterpagination}
 }
 
 .pagination a {color:{color:pagination link};font-size:25px;}
@@ -942,13 +990,14 @@ background-color:{color:scrollbar};
 
 </div>
 {/block:Posts}
-</section>
 
 {block:Pagination}
 <footer id="footerpag">
 {block:PreviousPage}<a href="{PreviousPage}" title="previous page"><c class="fa fa-chevron-left"></c></a>{/block:PreviousPage}{block:JumpPagination length="5"}{block:CurrentPage}<a href="/" class="currentpage">{PageNumber}</a>{/block:CurrentPage}{block:JumpPage}<a href="{URL}">{PageNumber}</a>{/block:JumpPage}{/block:JumpPagination}{block:NextPage}<a href="{NextPage}" title="next page"><c class="fa fa-chevron-right"></c></a>{/block:NextPage}
 </footer>
 {/block:Pagination}
+
+</section>
 
 <!-- tooltips scripts -->
 
